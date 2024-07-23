@@ -1,0 +1,27 @@
+package com.knowledgeways.idocs.network.model
+
+data class Document(
+    val action: String?,
+    val boxId: String?,
+    val category: String?,
+    val confidentialLabel: String?,
+    val confidentialValue: String?,
+    val createdBy: Any?,
+    val daysTotal: Int?,
+    val description: String?,
+    val documentId: String?,
+    val documentNumber: String?,
+    val documentType: Any?,
+    val from: String?,
+    val index: Int?,
+    val placeholderDate: String?,
+    val priorityLabel: String?,
+    val priorityValue: String?,
+    val read: Boolean?,
+    val receivedDocumentDate: Any?,
+    val receivedDocumentNumber: Any?,
+    val status: String?,
+    val subject: String?,
+    val to: Any?,
+    val transferId: String?,
+) : java.io.Serializable
