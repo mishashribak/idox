@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/layout_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:openDrawer="left">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/iv_drawer_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_drawer_upper_item_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_drawer_upper_item_selected_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_drawer_mid_item_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_drawer_mid_item_selected_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_drawer_low_item_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_drawer_low_item_selected_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_calendar_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_logout_temp_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/iv_logo_temp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_toolbar_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_logout_background_icon"
+                        android:layout_width="76dp"
+                        android:layout_height="54dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/iv_background_viewer"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/iv_toolbar_background"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/iv_menu"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginStart="16dp"
+                            android:adjustViewBounds="true"
+                            android:padding="4dp"
+                            android:scaleType="fitCenter"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_menu"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/iv_menu"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/tv_title_search_result"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_width="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:text="@string/str_search_result"
+                            android:layout_height="wrap_content"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/layout_toolbar" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_nav"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:animateLayoutChanges="true"
+                android:background="@color/white">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_nav_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <include
+                        android:id="@+id/nav_header"
+                        layout="@layout/drawer_nav_header"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_nav_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toTopOf="@id/layout_nav_footer"
+                    app:layout_constraintTop_toBottomOf="@id/layout_nav_header">
+
+                    <include
+                        android:id="@+id/nav_body"
+                        layout="@layout/drawer_nav_body" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_nav_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <include
+                        android:id="@+id/nav_footer"
+                        layout="@layout/drawer_nav_footer"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/iv_floating_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:tint="@color/white"
+            app:borderWidth="0dp"
+            app:srcCompat="@drawable/ic_edit_floating_action_button"
+            android:backgroundTint="@color/color_floating_action_button" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:visibility="gone"
+            android:id="@+id/layout_create_option"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_floating_button">
+
+            <include
+                android:id="@+id/create_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/layout_document_create_option"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

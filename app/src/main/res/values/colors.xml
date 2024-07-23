@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="grey_975">#F8F8F8</color>
+    <color name="grey_950">#F4F4F4</color>
+    <color name="color_grey_900">#E0E0E0</color>
+    <color name="color_grey_800">#CCCCCC</color>
+    <color name="color_grey_700">#B0B0B0</color>
+    <color name="color_grey_600">#AAAAAA</color>
+    <color name="color_grey_500">#888888</color>
+    <color name="color_grey_400">#666666</color>
+    <color name="color_grey_300">#494949</color>
+    <color name="color_grey_200">#333333</color>
+    <color name="color_grey_100">#101010</color>
+
+    <color name="kprogresshud_default_color">#b1000000</color>
+    <color name="kprogresshud_grey_color">#449E9E9E</color>
+
+    <color name="color_transparent_300">#33000000</color>
+    <color name="color_transparent_100">#18000000</color>
+    <color name="color_transparent_1000">#00FFFFFF</color>
+    <color name="yellow_login">#F4B55C</color>
+    <color name="color_floating_action_button">#C94F3F</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_text_bottom_bar">#1F7972</color>
+
+</resources>

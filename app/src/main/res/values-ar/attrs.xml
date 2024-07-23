@@ -1,0 +1,105 @@
+<resources>
+    <bool name="isTablet">false</bool>
+
+    <string name="login_button_resource">login-btn@2x.png</string>
+    <string name="login_page_background_portrait">iphone-login-portrait@2x.png</string>
+    <string name="login_page_background_landscape">iphone-login-landscape@2x.png</string>
+    <string name="user_name_icon">username-tf@2x.png</string>
+    <string name="password_icon">password-tf@2x.png</string>
+
+    <string name="pdf_close_icon_name">viewer-home@2x.png</string>
+    <string name="pdf_details_icon_name">viewer-details.png</string>
+    <string name="pdf_links_icon_name">viewer-doclinks@2x.png</string>
+    <string name="pdf_attachment_icon_name">viewer-attachments@2x.png</string>
+    <string name="pdf_thumbnails_icon_name">viewer-grid@2x.png</string>
+    <string name="pdf_print_icon_name">viewer-print@2x.png</string>
+    <string name="pdf_bookmark_icon_name">viewer-bookmark@2x.png</string>
+    <string name="pdf_signature_icon_name">viewer-sign@2x.png</string>
+    <string name="pdf_edit_icon_name">viewer-editor@2x.png</string>
+    <string name="pdf_search_icon_name">viewer-search@2x.png</string>
+    \<string name="pdf_more_icon_name">toolbar-more@2x.png</string>
+
+    <string name="pdf_document_reply_icon_name">toolbar-reply@2x.png</string>
+    <string name="pdf_document_archive_icon_name">toolbar-archive@2x.png</string>
+    <string name="pdf_document_standard_forward_icon_name">toolbar-forward@2x.png</string>
+    <string name="pdf_document_quick_forward_icon_name">toolbar-forward@2x.png</string>
+    <string name="pdf_document_publish_icon_name">toolbar-publish@2x.png</string>
+    <string name="pdf_document_sign_reject_icon_name">toolbar-sign-reject@2x.png</string>
+    <string name="pdf_document_sign_approve_icon_name">toolbar-sign-approve@2x.png</string>
+
+    <string name="pdf_document_unread_icon">more-unread@2x.png</string>
+    <string name="pdf_document_share_icon">more-share@2x.png</string>
+    <string name="pdf_document_follow_up_icon">more-followup@2x.png</string>
+    <string name="pdf_document_follow_up_selected_icon">more-followup-selected@2x.png</string>
+    <string name="pdf_document_favorite_icon">more-favorite@2x.png</string>
+    <string name="pdf_document_favorite_selected_icon">more-favorite-selected@2x.png</string>
+    <string name="pdf_document_edit_icon">more-edit@2x.png</string>
+    <string name="pdf_document_delete_icon">more-delete@2x.png</string>
+    <string name="pdf_document_trash_icon">more-trash@2x.png</string>
+    <string name="pdf_document_un_trash_icon">more-untrash@2x.png</string>
+    <string name="pdf_document_reply_to_icon">more-reply-internal-document@2x.png</string>
+    <string name="pdf_document_linked_to_icon">more-link-internal-document@2x.png</string>
+    <string name="pdf_document_dcc_icon">more-sendtodcc@2x.png</string>
+    <string name="pdf_document_unarchive_icon">more-unarchive@2x.png</string>
+    <string name="pdf_document_sign_request_icon">more-sign-submit@2x.png</string>
+    <string name="pdf_document_sign_cancel_icon">more-sign-cancel@2x.png</string>
+
+    <string name="str_document_forward_favorite_icon">fav-iPad-20@2x.png</string>
+    <string name="str_document_forward_organizations_icon">org-iPad-20@2x.png</string>
+    <string name="str_document_forward_employee_icon">emp-iPad-20@2x.png</string>
+    <string name="str_document_forward_sister_org_icon">sisorg-iPad-20@2x.png</string>
+
+    <declare-styleable name="AndroidTagView">
+        <attr name="vertical_interval" format="dimension" />
+        <attr name="horizontal_interval" format="dimension" />
+
+        <attr name="container_border_width" format="dimension" />
+        <attr name="container_border_radius" format="dimension" />
+        <attr name="container_border_color" format="color" />
+        <attr name="container_background_color" format="color" />
+        <attr name="container_enable_drag" format="boolean" />
+        <attr name="container_drag_sensitivity" format="float" />
+        <attr name="container_max_lines" format="integer" />
+        <attr name="container_gravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="center" value="17" />
+            <enum name="right" value="5" />
+        </attr>
+
+        <attr name="tag_border_width" format="dimension" />
+        <attr name="tag_corner_radius" format="dimension" />
+        <attr name="tag_horizontal_padding" format="dimension" />
+        <attr name="tag_vertical_padding" format="dimension" />
+        <attr name="tag_text_size" format="dimension" />
+        <attr name="tag_bd_distance" format="dimension" />
+        <attr name="tag_text_color" format="color" />
+        <attr name="tag_border_color" format="color" />
+        <attr name="tag_background_color" format="color" />
+        <attr name="tag_max_length" format="integer" />
+        <attr name="tag_clickable" format="boolean" />
+        <attr name="tag_selectable" format="boolean" />
+        <attr name="tag_theme" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="random" value="0" />
+            <enum name="pure_cyan" value="1" />
+            <enum name="pure_teal" value="2" />
+        </attr>
+        <attr name="tag_text_direction" format="enum" >
+            <enum name="ltr" value="3" />
+            <enum name="rtl" value="4" />
+        </attr>
+
+        <attr name="tag_ripple_color" format="color" />
+        <attr name="tag_ripple_alpha" format="integer" />
+        <attr name="tag_ripple_duration" format="integer" />
+
+        <attr name="tag_enable_cross" format="boolean" />
+        <attr name="tag_cross_width" format="dimension" />
+        <attr name="tag_cross_color" format="color" />
+        <attr name="tag_cross_line_width" format="dimension" />
+        <attr name="tag_cross_area_padding" format="dimension" />
+        <attr name="tag_support_letters_rlt" format="boolean" />
+        <attr name="tag_background" format="reference" />
+    </declare-styleable>
+
+</resources>

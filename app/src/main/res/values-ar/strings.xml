@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">iDox</string>
+
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="str_organizations">إدارة</string>
+    <string name="str_choose_organization">اختر إدارة</string>
+    <string name="str_close">إغلاق</string>
+    <string name="str_select_from">اختر من</string>
+    <string name="str_downloading_theme_icons">جاري تحميل الايقونات</string>
+    <string name="str_downloading_theme_images">جاري تحميل التصميم</string>
+    <string name="str_fetching_theme_list">تحميل نماذج العرض</string>
+
+    <string name="str_enter_username">الرجاء ادخال اسم المستخدم</string>
+    <string name="str_enter_password">الرجاء ادخال كلمة المرور</string>
+    <string name="str_invalid_password">طول كلمة المرور ٥ محارف عالاقل</string>
+
+    <string name="str_nav_bar_open">Open navigation drawer</string>
+    <string name="str_nav_bar_close">Close navigation drawer</string>
+
+    <string name="str_settings">الاعدادات</string>
+    <string name="str_done"> تم</string>
+
+    <string name="str_clear_temp_files">حذف الملفات المؤقتة</string>
+    <string name="str_sync_user_data">مزامنة المعلومات الشخصية</string>
+    <string name="str_theme_manager">مدير التصاميم</string>
+    <string name="str_page_size">عدد السجلات بالصفحة</string>
+    <string name="str_night_reading_mode">وضع القراءة الليلي</string>
+    <string name="str_side_scrolling">تصفح جانبي</string>
+    <string name="str_continue_reading">تصفح مستمر</string>
+    <string name="str_page_curl">تصفح كتاب</string>
+    <string name="str_page_turn_options">طريقة استعراض الصفحات</string>
+    <string name="str_horizontal">أفقي</string>
+    <string name="str_vertical">عامودي</string>
+    <string name="str_page_flipping">تقليب الصفحات</string>
+    <string name="str_single_page">صفحة واحدة</string>
+    <string name="str_two_pages">صفحتين معاً</string>
+    <string name="str_auto_rotate">تلقائي عند تدوير الجهاز</string>
+    <string name="str_offline_actions">عدد الصفحات</string>
+    <string name="str_delete_all_offline_actions">حذف جميع التعديلات في وضع العمل بدون اتصال</string>
+
+    <string name="str_search">بحث</string>
+    <string name="str_subject">الموضوع</string>
+    <string name="document_type">نوع المعاملة</string>
+    <string name="reference_number">رقم المعاملة</string>
+    <string name="str_document_date">تاريخ المعاملة</string>
+    <string name="str_from">من</string>
+    <string name="str_to">إلى</string>
+    <string name="str_external_organizations">اختر الجهة الخارجية</string>
+    <string name="str_internal_organizations">اختر الجهة الداخلية</string>
+    <string name="str_choose_type">أدخل نوع المعاملة</string>
+    <string name="str_enter_reference_number">أدخل رقم المعاملة</string>
+    <string name="str_clear">مسح</string>
+    <string name="str_themes">التصميم</string>
+    <string name="str_temp_files_cleared">تم حذف الملفات المؤقتة</string>
+    <string name="str_date_format">dd MM, yyyy</string>
+    <string name="str_enter_subject">أدخل الموضوع</string>
+    <string name="str_value_page">10</string>
+    <string name="str_search_result">نتائج البحث</string>
+    <string name="str_one_time_password">One Time Password</string>
+    <string name="str_enter_otp">Please enter the One-time Password sent to mobile number</string>
+    <string name="str_submit">Submit</string>
+    <string name="str_cancel">Cancel</string>
+
+    <string name="str_details">Details</string>
+    <string name="str_links">Links</string>
+    <string name="str_attachments">Attachments</string>
+    <string name="str_thumbnails">Thumbnails</string>
+    <string name="str_print">Print</string>
+    <string name="str_bookmark">Bookmark</string>
+    <string name="str_signature">Signature</string>
+    <string name="str_edit">Edit</string>
+    <string name="str_more">More</string>
+
+    <string name="str_reply">Reply</string>
+    <string name="str_archive">Archive</string>
+    <string name="str_forward">Forward</string>
+    <string name="str_publish">Publish</string>
+    <string name="str_sign_reject">Sign Reject</string>
+    <string name="str_sign_approve">Sign Approve</string>
+
+    <string name="str_unread">Unread</string>
+    <string name="str_share">Share</string>
+    <string name="str_follow_up">Follow up</string>
+    <string name="str_favorite">Favorite</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_trash">Trash</string>
+    <string name="str_un_trash">Untrash</string>
+    <string name="str_reply_to">Reply To</string>
+    <string name="str_linked_to">Linked To</string>
+    <string name="str_dcc">DCC</string>
+    <string name="str_unarchive">Unarchive</string>
+    <string name="str_sign_request">Sign Request</string>
+    <string name="str_sign_cancel">Sign cancel</string>
+    <string name="str_downloading_pdf">Downloading PDF</string>
+    <string name="str_history">History</string>
+    <string name="str_action">Action</string>
+    <string name="str_status">Status</string>
+    <string name="str_note">Note</string>
+    <string name="str_date">Date</string>
+    <string name="str_description">Description</string>
+    <string name="str_second_org_from">Second org from </string>
+    <string name="str_empty_links">No linked documents</string>
+    <string name="str_empty_attachments">No attachments found</string>
+    <string name="str_back">Back</string>
+
+    <string name="str_input_app_url">Enter server url here</string>
+
+    <string name="str_main_attachments">Main Attachments</string>
+    <string name="str_other_attachments">Other Attachments</string>
+
+    <string name="str_notes">Notes</string>
+    <string name="str_rejection_reason">Rejection Reason</string>
+    <string name="str_reject">Reject</string>
+    <string name="str_send">Send</string>
+    <string name="str_employees">Employees</string>
+    <string name="str_sister_organizations">Sister Organizations</string>
+    <string name="str_search_favorite">Search favorite</string>
+    <string name="str_search_organization">Search organization</string>
+    <string name="str_search_employee">Search employee</string>
+    <string name="str_you_want_sign_doc">Are you sure you want sign the document?</string>
+
+    <string name="str_forward_type">Forward Type</string>
+    <string name="str_priority">Priority</string>
+    <string name="str_write_comment">Write a comment…</string>
+    <string name="str_add_to_favorite">Add to Favorite</string>
+    <string name="str_add">Add</string>
+    <string name="str_update">Update</string>
+
+    <string name="str_create_internal_outgoing">Create Internal outgoing</string>
+    <string name="str_create_external_outgoing">Create External outgoing</string>
+
+    <string name="str_save">Save</string>
+    <string name="str_save_continue">Save and continue</string>
+    <string name="str_linked_document">Linked Documents</string>
+
+    <string name="str_internal_outgoing">Internal Outgoing</string>
+    <string name="str_external_outgoing">External Outgoing</string>
+</resources>
