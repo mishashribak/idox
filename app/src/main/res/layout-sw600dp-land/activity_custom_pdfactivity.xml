@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/layout_footer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/layout_toolbar" />
+
+            <include
+                android:id="@+id/layout_toolbar"
+                layout="@layout/toolbar_custom_pdf" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <include
+                    android:id="@+id/layout_bottom_bar"
+                    layout="@layout/bottom_bar_custom_pdf"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.pspdfkit.ui.search.PdfSearchViewModular
+            android:id="@+id/modularSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="8dp"
+            android:visibility="invisible"/>
+
+        <com.pspdfkit.ui.PdfThumbnailGrid
+            android:id="@+id/thumbnailGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+
+        <com.pspdfkit.ui.PdfOutlineView
+            android:id="@+id/outlineView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <com.pspdfkit.ui.toolbar.ToolbarCoordinatorLayout
+                android:id="@+id/toolbarCoordinatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+        <com.pspdfkit.ui.inspector.PropertyInspectorCoordinatorLayout
+            android:id="@+id/inspectorCoordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="16dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:visibility="gone"
+            android:id="@+id/layout_overlay_reply_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp">
+
+            <include
+                android:id="@+id/layout_reply_pdf"
+                layout="@layout/layout_reply_pdf"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:visibility="gone"
+            android:id="@+id/layout_overlay_reject_reason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp">
+
+            <include
+                android:id="@+id/layout_reject_reason"
+                layout="@layout/layout_rejection_reason_pdf"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:visibility="gone"
+            android:id="@+id/layout_overlay_forward"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp">
+
+            <include
+                android:id="@+id/layout_forward"
+                layout="@layout/layout_document_forward"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:visibility="gone"
+            android:id="@+id/layout_overlay_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp">
+
+            <include
+                android:id="@+id/layout_org_user_detail"
+                layout="@layout/layout_org_user_detail"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical|end"
+            app:srcCompat="@drawable/ic_next"
+            />
+
+        <ImageView
+            android:id="@+id/iv_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical|start"
+            app:srcCompat="@drawable/ic_prev"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:visibility="gone"
+            android:id="@+id/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+
+</layout>
